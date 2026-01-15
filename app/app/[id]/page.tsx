@@ -61,7 +61,7 @@ export default function AppViewPage() {
     // Render purely the preview component fullscreen
     return (
         <main className="h-screen w-screen overflow-hidden bg-white relative">
-            <Preview html={data.html} state={data.state} className="rounded-none border-0" showHomeButton={false} />
+            <Preview html={data.html} state={data.state} className="rounded-none border-0" refreshKey={0} />
             <a
                 href="/"
                 target="_blank"

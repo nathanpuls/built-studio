@@ -15,7 +15,7 @@ interface PreviewProps {
   state: Record<string, any>;
   className?: string;
   refreshKey: number;
-  onElementSelect?: (path: string, elementInfo: { tagName: string, color: string, bgColor: string }) => void;
+  onElementSelect?: (path: string, elementInfo: { tagName: string, color: string, bgColor: string, fontFamily: string, classList: string[] }) => void;
   selectedPath?: string | null;
 }
 

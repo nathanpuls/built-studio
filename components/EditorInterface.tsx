@@ -456,6 +456,7 @@ export function EditorInterface({ projectId, initialHtml, initialState }: Editor
             if (parentA && parentB) {
                 if (parentA.parentElement === parentB.parentElement) {
                     const parent = parentA.parentElement;
+                    if (!parent) return;
                     let aIndex = -1, bIndex = -1;
                     const children = Array.from(parent.children);
                     for (let i = 0; i < children.length; i++) {
